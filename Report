@@ -1,0 +1,19 @@
+what i did first was change the number of workers to 2 people and that worked  out weel with 0 customers in line and an average wait of 1.86 minutes and a idle time of 201 which isnt good buy beeter then what it was before.
+
+next i changed the the time when customers to arrive to 1 instead of two and changed the cashiers to 3 worked well but had a lot of wait time but not a HUGE amount
+
+then this function was added which adds a random customer between 0, 3 minutes
+ nextShopper = random.ranint(0,3)
+
+This was changhed from that
+items = random.randint(5, 20)
+into this to make the amount of items grabbed more spontaneous
+items = random.choice([5, 5, 10, 10, 10, 15, 15, 15, 20, 20, 50])
+
+after doing all of that the end result was actually quite good this is what I got
+0
+The average wait time was 2.92 minutes.
+The total idle time was 175 minutes
+
+after that I wanted to change the yield env.timeout so i changed it to 0.5 instead of 1
+but it did worse then before so i changed it back.
